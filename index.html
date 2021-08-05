@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Remember to replace this with your title! -->
+    <title>Sam Grooms Website</title>
+    
+    <!-- Link for bootstrap from: 
+    https://getbootstrap.com/docs/5.0/getting-started/introduction -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom styles (these can extend bootstrap which is JUST CSS!) -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-spy" data-bs-offset="100">
+  <div class="mb-5"></div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar-spy">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#hero-section"><img class="home-button" src="img/self.jpg" width="40px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#meetme-section">Meet Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inspiration-section">Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero section -->
+  <section class="container-fluid text-center" id="hero-section">
+    <div>
+      <!-- SIZZLE added flip to profile photo -->
+      <img class="img-fluid profile-img animate__animated animate__flipInY animate__slow" src="img/self.jpg">
+    </div>
+    <div> 
+      <!-- SIZZLE added slow fade in to name and title -->
+      <h2 class="mt-5 animate__animated animate__fadeIn animate__slow">Sam Grooms</h2>
+      <span class="fst-italic "><p class="animate__animated animate__fadeIn animate__slow">Junior Web Developer</p></span>
+    </div>
+  </section>
+
+  <section class="container-fluid py-5 text-center" id="skills-section">
+    <!-- Start writing your skills section here. -->
+    <h3 class="pb-4">Projects</h3>
+    <div class="row">
+      <div class="skill-container col-md-4 col-sm-6">
+        <a href="https://WD2-Module-7-Midterm-00-Project-Game-1-Magic8B-SamGrooms.asuwd1su21.repl.co"><img class="img-fluid" src="img/magic_8ball.png"></a>
+        <div>Magic 8 Ball</div>
+        <p></p>
+      </div>
+      <div class="skill-container col-md-4 col-sm-6">
+        <a href="https://WD2-Module-7-Midterm-00-Project-Game-2-HigherL-SamGrooms.asuwd1su21.repl.co"><img class="img-fluid" src="img/hilo_game.png"></a>
+        <div>High-Low Game</div>
+        <p></p>
+      </div>
+      <div class="skill-container col-md-4 col-sm-6">
+        <a href="https://WD2-Module-9-Final-03-Project-Game-3-Match-Game-SamGrooms.asuwd1su21.repl.co"><img class="img-fluid" src="img/matching.png"></a>
+        <div>Matching Game</div>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Mission/Meet-me section -->
+  <section class="container py-5" id="meetme-section">
+    <!-- Start writing your Mission/Meet-me section here. -->
+    <h3 class="text-center pb-4">Meet Me</h3>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img class="img-fluid mb-2" src="img/keyboard.jpg" alt="keyboard">
+      </div>
+      <div class="col-md-6 col-12 auto">
+      <p class="text-center">Hello! My name is Sam and I am a recent graduate of Arizona State University with a bachelor's degree in organizational leadership and business. Though my true passion lies in web development, some of my favorite hobbies are birding, hanging out with my husband, our two pups, Lily and Chase, and playing video games! I hope to one day work for a game development company so that I can help create an awesome and safe place for people to hang out online!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section class="container-fluid py-5 text-center" id="skills-section">
+    <!-- Start writing your skills section here. -->
+    <h3 class="pb-4">Skills</h3>
+    <div class="row">
+      <div class="skill-container col-md-3 col-sm-6">
+        <img class="img-fluid" src="img/html5.png">
+        <p>Structuring web content using modern semantic HTML.</p>
+      </div>
+      <div class="skill-container col-md-3 col-sm-6">
+        <img class="img-fluid" src="img/css-logo.png">
+        <p>Presenting appealing web designs and interactions using modern CSS.</p>
+      </div>
+      <div class="skill-container col-md-3 col-sm-6">
+        <img class="img-fluid" src="img/bootstrap.png">
+        <p>Developing responsive websites using the web's most popular framework, Bootstrap.</p>
+      </div>
+      <div class="skill-container col-md-3 col-sm-6">
+        <img class="img-fluid" src="img/javascript.png">
+        <p>Developing small games utilizing Javascript.</p>
+      </div>
+        <!-- SIZZLE added heartbeat to show clickable skill leading to a site with my previous works -->
+    <div class="row">
+      <div class="skill-container col-sm-12">
+        <a href="https://sgalbum.wordpress.com/previous-works/">
+        <img class="img-fluid animate__animated animate__heartBeat animate__slower 10s animate__infinite" src="img/ps-logo.png"></a>
+        <p>Proficiency in Adobe Photoshop and Adobe Illustrator to create and edit designs.<br>Check them out above!</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Inspiration Section -->
+  <section class="container text-center py-5" id="inspiration-section">
+    <h3 class="pb-4">Inspiration</h3>
+    <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0">
+        </button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1">
+        </button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2">
+        </button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item drk active">
+          <img src="img/lily_tomlin.jpg" alt="lily quote">
+          <div class="carousel-caption">
+            <h5>"I always wondered why somebody doesn't do something about that. Then I realized I was somebody."</h5>
+            <p><i>-Lily Tomlin</i></p>
+          </div>
+        </div>
+        <div class="carousel-item drk">
+          <img src="img/Morty.jpg" alt="Morty">
+          <div class="carousel-caption">
+            <h5>"Nobody exists on purpose. Nobody belongs anywhere. We’re all going to die. Come watch TV."</h5>
+            <p><i>-Morty</i></p>
+          </div>
+        </div>
+        <div class="carousel-item drk">
+          <img src="img/lotr.jpg" alt="Lotr">
+          <div class="carousel-caption">
+            <h5>"Not all those who wander are lost."</h5>
+            <p><i>-Bilbo Baggins</i></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container-fluid text-center py-4" id="contact-section">
+    <h3>Contact Me</h3>
+    <p class="fst-italic">Follow or message me on any of my social media platforms below!</p>
+    <div class="row pt-5">
+      <a class="col-4" href="https://www.instagram.com/sammorz/"><i class=" bi bi-instagram fa-3x"></i></a>
+      <a class="col-4" href="https://www.twitch.com/sammorz"><i class="bi-twitch fa-3x" ></i></a>
+      <a class="col-4" href="https://www.linkedin.com/in/samanthagrooms/"><i class="bi-linkedin fa-3x"></i></a>
+    </div>
+    <!-- See https://icons.getbootstrap.com/ -->
+  </section>
+  <!-- Footer section -->
+  <section class="container-fluid text-center" id="footer-section">
+    <footer>
+      <p>&copy; Sam Grooms 2021</p>
+    </footer>
+  </section>
+  <!-- Bootstrap Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

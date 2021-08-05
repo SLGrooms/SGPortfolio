@@ -1,0 +1,159 @@
+/* You can add custom CSS and override boostrap styles in this file.  Remember, bootstrap is just CSS at the end of the day! */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1A1A1B;
+  color: #37AA9C;
+}
+
+nav {
+   box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+   0 0 0 2px rgb(12, 8, 8),
+   0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.home-button {
+  border-radius: 50%;
+  border: 1px solid #333F44 ;
+}
+
+/* SIZZLE added animation on over for home icon */
+.home-button:hover {
+  animation: bounce; 
+  animation-duration: 2s; 
+}
+
+#hero-section {
+  background-image: 
+    linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5)),
+    url(img/hero-img.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 75vh;
+  padding: clamp(50px, 10vw, 100px);
+}
+
+#hero-section h2 {
+  color: #94F3E4;
+  text-shadow: 1px 1px rgb(37, 65, 60);
+  font-size: clamp(16px, 3vw, 30px);
+}
+
+#hero-section p {
+  color: #94F3E4;
+  text-shadow: 1px 1px rgb(37, 65, 60);
+  font-size: clamp(16px, 3vw, 30px);
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 5px solid #333F44 ;
+  margin: auto;
+  max-height: 200px;
+  min-height: 100px;
+  min-width: 100px;
+} 
+
+#meetme-section h3 {
+  font-size: clamp(20px, 3vw, 26px)
+}
+
+#meetme-section p {
+  background-color: #1A1A1B;
+  color: #37AA9C;
+  font-size: clamp(12px, 3vw, 16px);
+  height: 300px;
+  margin: 0;
+}
+
+.auto {
+  margin-top: auto!important;
+  margin-bottom: auto!important;
+}
+
+#skills-section {
+  background-color: #37AA9C;
+  color: #333F44;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+#skills-section h3 {
+  font-size: clamp(20px, 3vw, 26px);
+}
+
+.skill-container img {
+  max-height: 200px;
+  filter: drop-shadow(8px 8px 10px grey) grayscale(50%);
+  padding-bottom: 20px;
+}
+
+#inspiration-section h3 {
+  font-size: clamp(20px, 3vw, 26px);
+}
+
+.carousel-item img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-size: clamp(10px, 4.3333vw, 16px);
+}
+
+.carousel-caption p {
+  font-size: clamp(8px, 4.3333vw, 12px);
+}
+
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+#contact-section {
+  background-color:#37AA9C;
+  color: #333F44;
+  height: 350px;
+  font-size: clamp(36px, 50px, 75px);
+}
+
+#contact-section h3 {
+  font-size: clamp(20px, 3vw, 26px)
+}
+#contact-section i {
+  background-color:#37AA9C;
+  color: #333F44;
+  font-size: clamp(10px, 15vw, 75px);
+}
+
+#contact-section p {
+  font-size: clamp(12px, 4vw, 16px);
+}
+
+/* SIZZLE added hover animation for contact icons */
+#contact-section i:hover, #contact-section a:hover {
+  color: lightsteelblue;
+  animation: headShake; 
+  animation-duration: 2s; 
+}
+
+#footer-section {
+  height: 50px;
+  margin: auto;
+  vertical-align: middle;
+  line-height: 50px;
+  font-size: clamp(10px, 2vw, 16px);
+}
